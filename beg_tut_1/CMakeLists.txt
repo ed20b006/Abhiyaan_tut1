@@ -90,7 +90,9 @@ generate_messages(
 #   cfg/DynReconf1.cfg
 #   cfg/DynReconf2.cfg
 # )
-
+catkin_install_python(PROGRAMS src/talker2.py src/listener2.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 ###################################
 ## catkin specific configuration ##
 ###################################
